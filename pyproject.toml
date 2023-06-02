@@ -51,17 +51,15 @@ poetry-core = "1.5.2"
 poetry-plugin-export = "^1.3.0"
 "backports.cached-property" = { version = "^1.0.2", python = "<3.8" }
 build = "^0.10.0"
-cachecontrol = { version = "^0.12.9", extras = ["filecache"] }
+cachecontrol = { version = "^0.13.0", extras = ["filecache"] }
 cleo = "^2.0.0"
 crashtest = "^0.4.1"
 dulwich = "^0.21.2"
-filelock = "^3.8.0"
 html5lib = "^1.0"
 importlib-metadata = { version = ">=4.4", python = "<3.10" }
 installer = "^0.7.0"
 jsonschema = "^4.10.0"
 keyring = "^23.9.0"
-lockfile = "^0.12.2"
 # packaging uses calver, so version is unclamped
 packaging = ">=20.4"
 pexpect = "^4.7.0"
@@ -178,8 +176,6 @@ warn_unused_ignores = false
 
 [[tool.mypy.overrides]]
 module = [
-    'cachecontrol.*',
-    'lockfile.*',
     'pexpect.*',
     'requests_toolbelt.*',
     'shellingham.*',
